@@ -1,0 +1,99 @@
+
+<style >
+.container{
+  background-color: white;
+  border-radius: 10px;
+  min-height: 200px;
+  width: 300px;
+  z-index: 10;
+  position: absolute;
+  box-shadow:0 0 200px #111;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+h2 {
+  color: rgb(42,72,107);
+  font-size:22px;
+  text-align: center;
+}
+
+
+.buttons button {
+  background-color: rgb(42,72,107);
+  border: none;
+  color:white;
+  font-size: 12px;
+  font-weight: 300;
+  box-sizing: content-box;
+  padding:10px;
+  border-radius: 5px;
+  width: 60px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.cell {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#input_url {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: #f2f2f2;
+  border: none;
+  margin-bottom:20px;
+  font-size: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#confirm {
+  right: 18px;
+  bottom: 20px;
+}
+
+#cancel {
+  right: 108px;
+  bottom: 20px;
+}
+
+#not {
+	margin-top: 30px;
+}	
+</style>
+
+<div class="container">
+	<div class="grab">
+		
+	  <h2>New Grab</h2>
+	  
+	    <input id="input_url" type="text" placeholder="URL" readonly value="http://url">
+	    
+	    <div class="keyword">
+		    
+		    <div id="and">
+			    AND
+		    </div>	    
+			<button id="add_and">add AND</button>
+
+		    <div id="not">
+			    NOT
+		    </div>	    
+		    
+	    </div>
+	    
+	</div>
+	
+	<div class="buttons">
+		
+	  <button id="confirm" >확인</button>
+	  <button id="cancel" >취소</button>
+		
+	</div>
+</div>

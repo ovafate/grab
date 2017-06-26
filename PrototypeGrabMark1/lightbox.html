@@ -1,0 +1,83 @@
+
+<style >
+.frontbox{
+  background-color: white;
+  border-radius: 10px;
+  height: 400px;
+  width: 300px;
+  z-index: 10;
+  position: absolute;
+  box-shadow:0 0 200px #111;
+}
+
+.grab {
+  padding: 20px;
+  text-align: center;
+}
+
+.grab h2 {
+  color: rgb(42,72,107);
+  font-size:22px;
+}
+
+.inputbox{
+  margin-top:30px; 
+}
+
+.grab input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: #f2f2f2;
+  border: none;
+  margin-bottom:20px;
+  font-size: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: -5px;
+}
+
+button {
+  background-color: rgb(42,72,107);
+  border: none;
+  color:white;
+  font-size: 12px;
+  font-weight: 300;
+  box-sizing: content-box;
+  padding:10px;
+  border-radius: 5px;
+  width: 60px;
+  position: absolute;
+  cursor: pointer;
+}
+
+#confirm {
+  right: 18px;
+  bottom: 20px;
+}
+
+#cancel {
+  right: 108px;
+  bottom: 20px;
+}
+	
+</style>
+
+<div class="frontbox">
+<div class="grab">
+  <h2>New Grab</h2>
+  <div class="inputbox">
+    <input id="input_url" type="text" placeholder="URL" readonly value="http://url">
+	<!-- 시연용  -->
+    <input id="input_and" type="text" placeholder="AND">
+    <input id="input_or" type="text" placeholder="OR">
+    <input id="input_not" type="text" placeholder="NOT">
+<!--
+    <input id="input_title" type="text" placeholder="YOUR TITLE">
+    <input id="input_tag" type="text" placeholder="YOUR TAG">
+-->
+  </div>
+  <button id="confirm">확인</button>
+  <button id="cancel">취소</button>
+</div>
+</div>

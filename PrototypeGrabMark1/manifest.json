@@ -1,0 +1,36 @@
+{
+    "manifest_version": 2,
+    
+    "name": "Grab",
+    "description": "Selector of Data Area",
+    "version": "0.0.1",
+    
+	"background" : {
+		"page" : "background.html"
+	},
+    
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    
+    "content_scripts": [{
+      "matches": ["http://*/*", "https://*/*"],
+      "css": ["content.css"],
+      "js": ["content.js", "jquery.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }],
+    
+    "permissions": [
+	    "cookies",
+        "activeTab",
+        "<all_urls>",
+        "tabs"
+    ],
+    
+    "web_accessible_resources": [
+	    "lightbox.html",
+	    "lightbox_v2.html"
+	]
+}
